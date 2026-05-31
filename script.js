@@ -7,7 +7,8 @@ const listado = [
     "Licuado",
     "Cafe con leche",
     "Medialunas",
-    "Jugo de naranja con sandwich de miga"
+    "Jugo de naranja con sandwich de miga",
+    "Submarino con chocolate"
 ];
 
 let html = "<ul>";
@@ -24,3 +25,4 @@ boton.addEventListener("click", () => {
     resultado.textContent =
         `Cantidad de meriendas: ${listado.length}`;
 });
+

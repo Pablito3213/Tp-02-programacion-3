@@ -1,5 +1,4 @@
 #contenedor {
-    border: 1px solid black;
     padding: 15px;
     margin: 15px 0;
     width: 300px;
@@ -8,4 +7,24 @@
 button {
     padding: 10px;
     margin-top: 10px;
+}
+
+.tarjeta {
+    border: 3px solid blueviolet;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+
+
+
+.contenedor-tarjetas {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.seleccionada {
+    background-color: royalblue;
 }
