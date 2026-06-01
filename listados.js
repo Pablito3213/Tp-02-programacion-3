@@ -19,14 +19,17 @@ function mostrarProductos(lista) {
 
     contenedor.innerHTML = "";
 
-    for (let i = 0; i < lista.length; i++) {
+    if (lista.length === 0) {
+        contenedor.innerHTML += `
+            <p>No hay productos para mostrar</p>
+        `;
+    }
 
-        let producto = lista[i];
+    lista.forEach(producto => {
 
-        // VALIDACIÓN
         if (!producto.nombre || !producto.categoria) {
             console.log("Producto inválido");
-            continue;
+            return;
         }
 
         contenedor.innerHTML += `
@@ -35,7 +38,7 @@ function mostrarProductos(lista) {
                 <p>${producto.categoria}</p>
             </div>
         `;
-    }
+    });
 }
 
 btnTodos.addEventListener("click", () => {
