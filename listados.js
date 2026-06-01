@@ -19,17 +19,24 @@ function mostrarProductos(lista) {
 
     contenedor.innerHTML = "";
 
-    lista.forEach(producto => {
+    for (let i = 0; i < lista.length; i++) {
+
+        let producto = lista[i];
+
+        // VALIDACIÓN
+        if (!producto.nombre || !producto.categoria) {
+            console.log("Producto inválido");
+            continue;
+        }
+
         contenedor.innerHTML += `
             <div class="tarjeta">
                 <h3>${producto.nombre}</h3>
                 <p>${producto.categoria}</p>
             </div>
         `;
-    });
+    }
 }
-
-mostrarProductos(productos);
 
 btnTodos.addEventListener("click", () => {
     mostrarProductos(productos);
