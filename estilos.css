@@ -10,9 +10,9 @@ button {
 }
 
 .tarjeta {
-    border: 3px solid blueviolet;
+    border: 2px solid blueviolet;
     padding: 8px;
-    margin: 9px;
+    margin: 20px;
     width: 160px;
     height: 70px;
     cursor: pointer;
@@ -27,6 +27,6 @@ button {
 }
 
 .seleccionada {
-    background-color: royalblue;
+    background-color: burlywoodgit;
 }
 
